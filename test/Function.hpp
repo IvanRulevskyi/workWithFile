@@ -1,13 +1,15 @@
-//
-//  Function.hpp
-//  test
-//
-//  Created by Иван Рулевский on 24.04.2024.
-//
+# pragma once
+#include <iostream>
+#include <fstream>
+using namespace std;
 
-#ifndef Function_hpp
-#define Function_hpp
+//Завдання 1. Дано текстовий файл. Підрахувати кількість  слів, що починаються із символу, який задає користувач.
+void searchWord(string filename, char searchSymbol);
 
-#include <stdio.h>
+//  Завдання 2. Дано два текстові файли. З'ясувати, чи збі- гаються їхні рядки. Якщо ні, то вивести рядок, який не  збігається, з кожного файлу.
+void comparisonOfFileContents(string filenameFirst, string filenameSecond);
 
-#endif /* Function_hpp */
+//    Завдання 3. Дан текстовий файл. Необхідно створити  новий файл і записати в нього таку статистику по вихід- ному файлу:
+//    ■ Кількість символів;
+//    ■ Кількість рядків;
+void some(string filename);
